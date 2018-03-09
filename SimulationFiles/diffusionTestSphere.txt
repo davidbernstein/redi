@@ -1,0 +1,49 @@
+% Copyright (C) 2004-2018 David Bernstein <david.h.bernstein@gmail.com>
+%
+% This file is part of ReDi.
+%
+% ReDi is free software: you can redistribute it and/or modify
+% it under the terms of the GNU General Public License as published by
+% the Free Software Foundation, either version 3 of the License, or
+% (at your option) any later version.
+%
+% ReDi is distributed in the hope that it will be useful,
+% but WITHOUT ANY WARRANTY; without even the implied warranty of
+% MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+% GNU General Public License for more details.
+%
+% You should have received a copy of the GNU General Public License
+% along with ReDi.  If not, see <http://www.gnu.org/licenses/>.
+
+Number of Species = 1;
+
+Name of Species 1 = A;
+
+length units = microns;
+time units = seconds;
+
+start time = 0.0;
+end time = 10.00;
+
+Mesh output interval = 8.05;
+Time data output interval = 8.05;
+Console output interval = 1.0;
+
+Diffusion coefficient 1 = 200.0;
+
+Concentration type 1 = delta function;
+Concentration 1 = {0.0001, 0.0, 0.0, 10000};
+
+Mesh refinement = off;
+
+Refinement test = off;
+
+Mesh = /Users/dave/Projects/ReDi/MeshFiles/sphere100_8.dat;
+
+Number of Runs = 1;
+
+
+
+
+
+

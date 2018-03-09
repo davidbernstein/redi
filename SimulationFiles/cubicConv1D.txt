@@ -1,0 +1,55 @@
+% Copyright (C) 2004-2018 David Bernstein <david.h.bernstein@gmail.com>
+%
+% This file is part of ReDi.
+%
+% ReDi is free software: you can redistribute it and/or modify
+% it under the terms of the GNU General Public License as published by
+% the Free Software Foundation, either version 3 of the License, or
+% (at your option) any later version.
+%
+% ReDi is distributed in the hope that it will be useful,
+% but WITHOUT ANY WARRANTY; without even the implied warranty of
+% MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+% GNU General Public License for more details.
+%
+% You should have received a copy of the GNU General Public License
+% along with ReDi.  If not, see <http://www.gnu.org/licenses/>.
+
+% number and names of molecular species
+Number of Species = 2;
+Name of Species 1 = A;
+Name of Species 2 = B;
+
+Number of Materials = 1;
+
+% diffusion coefficients for first material
+Diffusion coefficient 1 = {1.0, 1.0};
+
+% reactions
+Number of reactions = 1;
+Reaction rate 1 = 0.0001;
+Reactant coefficients 1 = {1, 2};
+Product coefficients 1 = {0, 3};
+
+length units = microns;
+time units = seconds;
+
+start time = 0.0;
+end time = 2.83;
+
+%Mesh output interval = 1.0;
+%Time output interval = 0.1;
+%Console output interval = 1.;
+Ensemble output interval = 0.1;
+
+Concentration type 1 = cubic wave exact;
+Concentration 1 = {100.0, 14.0, 1.0, 0.0};
+
+Concentration type 2 = cubic wave exact;
+Concentration 2 = {100.0, 14.0, 2.0, 0.0};
+
+cubic test error = on;
+
+Mesh = /Users/dave/Projects/ReDi/MeshFiles/wave1DEven_40.dat;
+
+Number of Runs = 50000;

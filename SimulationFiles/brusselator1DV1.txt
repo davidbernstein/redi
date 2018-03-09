@@ -1,0 +1,87 @@
+% Copyright (C) 2004-2018 David Bernstein <david.h.bernstein@gmail.com>
+%
+% This file is part of ReDi.
+%
+% ReDi is free software: you can redistribute it and/or modify
+% it under the terms of the GNU General Public License as published by
+% the Free Software Foundation, either version 3 of the License, or
+% (at your option) any later version.
+%
+% ReDi is distributed in the hope that it will be useful,
+% but WITHOUT ANY WARRANTY; without even the implied warranty of
+% MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+% GNU General Public License for more details.
+%
+% You should have received a copy of the GNU General Public License
+% along with ReDi.  If not, see <http://www.gnu.org/licenses/>.
+
+% number and names of molecular species
+Number of Species = 4;
+Name of Species 1 = A;
+Name of Species 2 = B;
+Name of Species 3 = X;
+Name of Species 4 = Y;
+
+Number of Materials = 1;
+
+% reactions
+Number of reactions = 4;
+Reaction rate 1 = 1.0;
+Reaction rate 2 = 0.1;
+Reaction rate 3 = 10.0;
+Reaction rate 4 = 1.0;
+Reactant coefficients 1 = {1, 0, 0, 0};
+Reactant coefficients 2 = {0, 0, 2, 1};
+Reactant coefficients 3 = {0, 1, 1, 0};
+Reactant coefficients 4 = {0, 0, 1, 0};
+Product coefficients 1 = {1, 0, 1, 0};
+Product coefficients 2 = {0, 0, 3, 0};
+Product coefficients 3 = {0, 1, 0, 1};
+Product coefficients 4 = {0, 0, 0, 0};
+
+% diffusion coefficients for first material
+Diffusion coefficient 1 = {0.1};
+Diffusion coefficient 2 = {0.1};
+Diffusion coefficient 3 = {0.5};
+Diffusion coefficient 4 = {1.0};
+
+length units = microns;
+time units = seconds;
+
+start time = 0.0;
+end time = 0.5;
+
+% output times
+Mesh output interval = 0.01;
+%Time output interval = 0.1;
+Console output interval = 0.01;
+%Ensemble output interval = 0.05;
+
+% time averaging
+Time average output interval = 0.01;
+Number of time averages per output = 100;
+
+% space averaging
+spatial average neighborhood size = 4;
+
+Concentration type 1 = uniform;
+Concentration 1 = {100.0, 0.0};
+
+Concentration type 2 = uniform;
+Concentration 2 = {30.0, 0.0};
+
+Concentration type 3 = uniform;
+Concentration 3 = {100.0, 0.0};
+
+Concentration type 4 = uniform;
+Concentration 4 = {30.0, 0.0};
+
+Mesh refinement = off;
+
+Initial refinement level = 0;
+
+Refinement test = off;
+
+Mesh = /Users/dave/Projects/ReDi/MeshFiles/unitLineEven_1k.dat;
+
+Number of Runs = 1;

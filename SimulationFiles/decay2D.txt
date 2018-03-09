@@ -1,0 +1,54 @@
+% Copyright (C) 2004-2018 David Bernstein <david.h.bernstein@gmail.com>
+%
+% This file is part of ReDi.
+%
+% ReDi is free software: you can redistribute it and/or modify
+% it under the terms of the GNU General Public License as published by
+% the Free Software Foundation, either version 3 of the License, or
+% (at your option) any later version.
+%
+% ReDi is distributed in the hope that it will be useful,
+% but WITHOUT ANY WARRANTY; without even the implied warranty of
+% MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+% GNU General Public License for more details.
+%
+% You should have received a copy of the GNU General Public License
+% along with ReDi.  If not, see <http://www.gnu.org/licenses/>.
+
+Number of species = 2;
+Number of reactions = 1;
+
+Name of Species 1 = A;
+Name of Species 2 = B;
+
+length units = microns;
+time units = seconds;
+
+start time = 0.0;
+end time = 5.0;
+
+Mesh output interval = 0.2;
+Console output interval = 0.1;
+Time data output interval = 0.01;
+
+Diffusion coefficient 1 = 200;
+Diffusion coefficient 2 = 200;
+
+Reactant coefficients 1 = {1, 0};
+Product coefficients 1 = {0, 1};
+
+Reaction rate 1 = 1.0;
+
+Concentration type 1 = uniform;
+Concentration 1 = {0.1};
+
+Concentration type 2 = uniform;
+Concentration 2 = {0.0};
+
+Mesh refinement = off;
+Initial refinement level = 3;
+
+Mesh = /Users/dave/Projects/ReDi/MeshFiles/square10.dat;
+
+Number of Runs = 1;
+

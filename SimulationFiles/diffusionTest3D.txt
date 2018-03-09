@@ -1,0 +1,50 @@
+% Copyright (C) 2004-2018 David Bernstein <david.h.bernstein@gmail.com>
+%
+% This file is part of ReDi.
+%
+% ReDi is free software: you can redistribute it and/or modify
+% it under the terms of the GNU General Public License as published by
+% the Free Software Foundation, either version 3 of the License, or
+% (at your option) any later version.
+%
+% ReDi is distributed in the hope that it will be useful,
+% but WITHOUT ANY WARRANTY; without even the implied warranty of
+% MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+% GNU General Public License for more details.
+%
+% You should have received a copy of the GNU General Public License
+% along with ReDi.  If not, see <http://www.gnu.org/licenses/>.
+
+% number and names of molecular species
+Number of Species = 1;
+Name of Species 1 = A;
+
+Number of Materials = 1;
+
+% diffusion coefficients for first material
+Diffusion coefficient 1 = {1.0};
+
+length units = microns;
+time units = seconds;
+
+start time = 0.0;
+end time = 0.1;
+
+%Mesh output interval = 1.1;
+%Time output interval = 1.05;
+%Console output interval = 1.1;
+
+Concentration type 1 = uniform;
+Concentration 1 = {1000.0, 0};
+
+Mesh refinement = off;
+
+Initial refinement level = 0;
+
+Refinement test = off;
+
+Stop on contact with boundary = off;
+
+Mesh = /Users/dave/Projects/ReDi/MeshFiles/unitCube_9.dat;
+
+Number of Runs = 20;

@@ -1,0 +1,54 @@
+% Copyright (C) 2004-2018 David Bernstein <david.h.bernstein@gmail.com>
+%
+% This file is part of ReDi.
+%
+% ReDi is free software: you can redistribute it and/or modify
+% it under the terms of the GNU General Public License as published by
+% the Free Software Foundation, either version 3 of the License, or
+% (at your option) any later version.
+%
+% ReDi is distributed in the hope that it will be useful,
+% but WITHOUT ANY WARRANTY; without even the implied warranty of
+% MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+% GNU General Public License for more details.
+%
+% You should have received a copy of the GNU General Public License
+% along with ReDi.  If not, see <http://www.gnu.org/licenses/>.
+
+% number and names of molecular species
+Number of Species = 1;
+Name of Species 1 = A;
+
+Number of Materials = 1;
+
+% diffusion coefficients for first material
+Diffusion coefficient 1 = {1.0};
+
+length units = microns;
+time units = seconds;
+
+start time = 0.0;
+% n = m = 2
+%end time = 0.0088;
+
+% n = m = 3
+%end time = 0.0039;
+
+% n = 3, m = 0
+end time = 0.0078;
+
+%Mesh output interval = 0.1;
+%Time output interval = 0.1;
+%Console output interval = 0.1;
+Ensemble output interval = 0.05;
+
+Concentration type 1 = convergence test;
+Concentration 1 = {1000.0, 3.0, 0.0, 0.0, 0.0};
+
+Convergence test error = on;
+
+Initial refinement level = 0;
+
+Mesh = /Users/dave/Projects/ReDi/MeshFiles/voronoi_400.dat;
+
+Number of Runs = 1000;

@@ -1,0 +1,52 @@
+% Copyright (C) 2004-2018 David Bernstein <david.h.bernstein@gmail.com>
+%
+% This file is part of ReDi.
+%
+% ReDi is free software: you can redistribute it and/or modify
+% it under the terms of the GNU General Public License as published by
+% the Free Software Foundation, either version 3 of the License, or
+% (at your option) any later version.
+%
+% ReDi is distributed in the hope that it will be useful,
+% but WITHOUT ANY WARRANTY; without even the implied warranty of
+% MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+% GNU General Public License for more details.
+%
+% You should have received a copy of the GNU General Public License
+% along with ReDi.  If not, see <http://www.gnu.org/licenses/>.
+
+% number and names of molecular species
+Number of Species = 1;
+Name of Species 1 = Rad52;
+
+Number of Materials = 2;
+
+% diffusion coefficients for first material
+Diffusion coefficient 1 = {8.0, 8.0};
+
+length units = microns;
+time units = seconds;
+
+start time = 0.0;
+end time = 1.5;
+
+Mesh output interval = 100.01;
+Time output interval = 0.001;
+Console output interval = 0.01;
+
+Concentration type 1 = uniform;
+Concentration 1 = {1.0, 0};
+
+Erase species in material = {1, 1};
+
+Initial random seed = 2;
+
+% time averaging
+%Time average output interval = 0.005;
+%Number of time averages per output = 1000;
+
+% this is a 30X30X30 cube split into 30X30X30X6 (162k) tetrahedra
+% the elements in the strip 14<x<16 have material # set to 1
+Mesh = /Users/dave/Projects/ReDi/MeshFiles/kanaarCube_30.dat;
+
+Number of Runs = 1;
